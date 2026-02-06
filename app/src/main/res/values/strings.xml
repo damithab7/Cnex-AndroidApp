@@ -1,0 +1,23 @@
+<resources>
+    <string name="app_name">Cnex</string>
+
+    <!--    WelcomeDialog -->
+    <string name="welcome_screen_brief">Welcome to Cnex. We’re all about bringing you fresh styles and quality fits that keep you looking your best. No complicated setup here, just simple, straightforward shopping.Whenever you’re ready, just hit continue and let’s get into it.</string>
+    <string name="welcome_screen_title">Welcome to Cnex</string>
+    <string name="welcome_btn_text">Continue</string>
+
+    <!--    SignInActivity Text-->
+    <string name="sign_in_txt">Sign In</string>
+    <string name="email_placeholder_hint">Email Address</string>
+    <string name="password_placeholder_hint">Password</string>
+    <string name="continue_btn_txt">Continue</string>
+    <string name="sign_up_link_text">Don’t have an account ?</string>
+    <string name="sign_up_link">Create one</string>
+    <string name="forgot_password_link_text">Forgot Password ?</string>
+    <string name="forgot_password_link">Reset</string>
+
+<!--    SignUpActivity Text-->
+    <string name="sign_up_txt">Sign Up</string>
+    <string name="firstname_placeholder_hint">Firstname</string>
+    <string name="lastname_placeholder_hint">Lastname</string>
+</resources>

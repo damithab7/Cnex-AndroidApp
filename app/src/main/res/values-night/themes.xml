@@ -1,0 +1,25 @@
+<resources xmlns:tools="http://schemas.android.com/tools">
+    <!-- Base application theme. -->
+    <style name="AppTheme" parent="Theme.Material3.Dark.NoActionBar">
+        <!-- Primary brand color. -->
+        <item name="colorPrimary">@color/dark_active</item>
+        <item name="colorPrimaryVariant">@color/dark_active</item>
+        <item name="colorOnPrimary">@color/white</item>
+        <!-- Secondary brand color. -->
+        <item name="colorSecondary">@color/teal_200</item>
+        <item name="colorSecondaryVariant">@color/teal_200</item>
+        <item name="colorOnSecondary">@color/black</item>
+        <!-- Customize your theme here. -->
+        <!-- Dialog, Cards-->
+        <item name="colorSurface">@color/dark_main</item>
+        <item name="colorOnSurface">@color/white</item>
+        <item name="colorPrimarySurface">@color/dark_active</item>
+        <!-- Top tatus Bar-->
+        <item name="android:windowLightStatusBar">false</item>
+        <!-- Background window color-->
+        <item name="android:windowBackground">@color/dark_main</item>
+        <!-- EditText background color-->
+        <item name="editTextBackground">@color/dark_text_input_background</item>
+        <item name="android:drawableLeft">@color/white</item>
+    </style>
+</resources>
