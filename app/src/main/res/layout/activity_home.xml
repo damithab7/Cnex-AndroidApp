@@ -9,13 +9,16 @@
     android:id="@+id/main"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:layout_margin="@dimen/layout_margin"
     tools:context=".activity.HomeActivity">
 
     <TextView
-        android:id="@+id/textView"
+        android:id="@+id/h_logo"
+        android:fontFamily="@font/poppins"
+        android:textSize="@dimen/logo_font_size"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="TextView"
+        android:text="@string/logo_name"
         app:layout_constraintEnd_toStartOf="@+id/imageView"
         app:layout_constraintStart_toEndOf="@+id/imageView2"
         app:layout_constraintTop_toTopOf="parent" />
@@ -26,7 +29,7 @@
         android:layout_height="wrap_content"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:srcCompat="@drawable/emailicon" />
+        app:srcCompat="@drawable/wishlisticon" />
 
     <ImageView
         android:id="@+id/imageView2"
@@ -34,53 +37,104 @@
         android:layout_height="wrap_content"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:srcCompat="@drawable/usericon" />
+        app:srcCompat="@drawable/menuicon" />
 
     <EditText
-        android:id="@+id/editTextText"
-        android:layout_width="wrap_content"
+        android:id="@+id/h_search_edittext"
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_marginTop="4dp"
-        android:ems="10"
+        android:layout_marginVertical="@dimen/small_margin_vertical"
+        android:background="@drawable/edit_text_background"
+        android:drawableStart="@drawable/searchicon"
+        android:drawablePadding="@dimen/edit_text_icon_padding"
+        android:fontFamily="@font/poppins"
+        android:hint="@string/home_search_hint"
         android:inputType="text"
-        android:text="Name"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/textView" />
+        app:layout_constraintTop_toBottomOf="@+id/h_logo"
+        android:padding="@dimen/edit_text_padding"
+        android:textSize="@dimen/edit_text_size" />
 
-    <androidx.recyclerview.widget.RecyclerView
-        android:id="@+id/recyclerView"
-        android:layout_width="0dp"
-        android:nestedScrollingEnabled="false"
-        android:layout_height="wrap_content"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.0"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/linearLayout" />
 
     <LinearLayout
-        android:id="@+id/linearLayout"
+        android:layout_marginVertical="@dimen/small_margin_vertical"
+        android:id="@+id/categoriesLayoutHome"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_marginTop="1dp"
         android:orientation="horizontal"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/editTextText">
+        app:layout_constraintTop_toBottomOf="@+id/h_search_edittext">
 
         <TextView
-            android:id="@+id/textView2"
-            android:layout_width="wrap_content"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:textStyle="bold"
             android:layout_height="wrap_content"
+            android:fontFamily="@font/poppins"
+            android:textSize="@dimen/sub_heading_size"
             android:text="Categories" />
 
         <TextView
-            android:id="@+id/textView3"
-            android:layout_width="match_parent"
+            android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="See More"
-            android:textAlignment="textEnd" />
+            android:fontFamily="@font/poppins"
+            android:text="See All"
+            android:textAlignment="textEnd"
+            android:textSize="@dimen/sub_heading_size" />
     </LinearLayout>
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/home_categories_recycle"
+        android:layout_marginVertical="@dimen/small_margin_vertical"
+        android:layout_width="0dp"
+        android:nestedScrollingEnabled="false"
+        android:layout_height="wrap_content"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/categoriesLayoutHome" />
+
+    <LinearLayout
+        android:id="@+id/newArrivalsLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginVertical="@dimen/small_margin_vertical"
+        android:layout_marginTop="1dp"
+        android:orientation="horizontal"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/home_categories_recycle">
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:textStyle="bold"
+            android:fontFamily="@font/poppins"
+            android:gravity="center_vertical"
+            android:text="New Arrivals"
+            android:textSize="@dimen/sub_heading_size" />
+
+        <ImageView
+            android:id="@+id/newArrivalsHome"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:srcCompat="@drawable/rightarrow" />
+
+
+    </LinearLayout>
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/new_arrivals_home_recycle"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="1dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/newArrivalsLayout" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
 </androidx.core.widget.NestedScrollView>

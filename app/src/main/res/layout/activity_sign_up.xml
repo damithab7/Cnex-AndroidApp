@@ -26,7 +26,7 @@
         android:layout_width="0dp"
         android:layout_height="0dp"
         android:layout_marginHorizontal="@dimen/default_margin_horizontal"
-        android:layout_marginVertical="@dimen/default_margin_vertical"
+        android:layout_marginVertical="@dimen/layout_margin"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
@@ -37,7 +37,7 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:background="@drawable/edit_text_background"
-            android:drawableLeft="@drawable/usericon"
+            android:drawableStart="@drawable/usericon"
             android:drawablePadding="@dimen/edit_text_icon_padding"
             android:fontFamily="@font/poppins"
             android:hint="@string/firstname_placeholder_hint"
@@ -50,7 +50,7 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:background="@drawable/edit_text_background"
-            android:drawableLeft="@drawable/usericon"
+            android:drawableStart="@drawable/usericon"
             android:layout_marginTop="@dimen/default_margin_top"
             android:drawablePadding="@dimen/edit_text_icon_padding"
             android:fontFamily="@font/poppins"
@@ -80,7 +80,7 @@
             android:layout_height="wrap_content"
             android:layout_marginTop="@dimen/default_margin_top"
             android:background="@drawable/edit_text_background"
-            android:drawableLeft="@drawable/passwordicon"
+            android:drawableStart="@drawable/passwordicon"
             android:drawablePadding="@dimen/edit_text_icon_padding"
             android:fontFamily="@font/poppins"
             android:hint="@string/password_placeholder_hint"
@@ -91,10 +91,10 @@
             tools:layout_editor_absoluteY="65dp" />
 
         <Button
-            android:layout_marginTop="@dimen/default_margin_top"
             android:id="@+id/signUpContinueBtn"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/default_margin_top"
             android:fontFamily="@font/poppins"
             android:text="@string/continue_btn_txt"
             android:textSize="@dimen/button_text_size" />

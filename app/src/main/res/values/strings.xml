@@ -16,8 +16,19 @@
     <string name="forgot_password_link_text">Forgot Password ?</string>
     <string name="forgot_password_link">Reset</string>
 
-<!--    SignUpActivity Text-->
+    <!--    SignUpActivity Text-->
     <string name="sign_up_txt">Sign Up</string>
     <string name="firstname_placeholder_hint">Firstname</string>
     <string name="lastname_placeholder_hint">Lastname</string>
+    <string name="logo_name">Cnex</string>
+
+    <!--    HomeActivityText-->
+    <string name="home_search_hint">Search</string>
+    <string name="subtotal">Subtotal</string>
+    <string name="shipping">Shipping</string>
+    <string name="total">Total</string>
+    <string name="checkout">Checkout</string>
+    <string name="cart">Cart</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
 </resources>

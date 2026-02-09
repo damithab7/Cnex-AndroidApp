@@ -21,5 +21,6 @@
         <!-- EditText background color-->
         <item name="editTextBackground">@color/dark_text_input_background</item>
         <item name="android:drawableLeft">@color/white</item>
+        <item name="textColorCustom">@color/white</item>
     </style>
 </resources>
