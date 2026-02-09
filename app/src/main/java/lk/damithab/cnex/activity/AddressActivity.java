@@ -10,13 +10,13 @@ import androidx.core.view.WindowInsetsCompat;
 
 import lk.damithab.cnex.R;
 
-public class WishlistActivity extends AppCompatActivity {
+public class AddressActivity extends AppCompatActivity {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         EdgeToEdge.enable(this);
-        setContentView(R.layout.activity_wishlist);
+        setContentView(R.layout.activity_address);
         ViewCompat.setOnApplyWindowInsetsListener(findViewById(R.id.main), (v, insets) -> {
             Insets systemBars = insets.getInsets(WindowInsetsCompat.Type.systemBars());
             v.setPadding(systemBars.left, systemBars.top, systemBars.right, systemBars.bottom);

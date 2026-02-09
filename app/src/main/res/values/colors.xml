@@ -9,15 +9,17 @@
     <color name="white">#FFFFFFFF</color>
     <!--    Light theme colors-->
     <color name="light_main">#2C4251</color>    <!--    Charcol Blue-->
+    <color name="light_main_variant">#d3d6e2</color>    <!--    Charcol Blue-->
     <color name="light_active">#9DD1F1</color> <!--baby blue-->
     <color name="non_active">#C8E0F4</color> <!-- pale sky-->
     <color name="light_purple">#B7B5E4</color>
     <color name="light_text_input_background">#F4F4F4</color>
     <!--    Dark theme colors-->
     <color name="dark_main">#151515</color>    <!--    Onyx-->
+    <color name="dark_main_variant">#020202</color>
     <color name="dark_main2">#041B15</color> <!--Evergreen-->
     <color name="dark_main3">#170312</color> <!-- coffeeBean-->
-    <color name="dark_active">#508AA8</color>
+    <color name="dark_active">#607ADB</color>
     <color name="dark_icons">#F4F4F4</color>
     <color name="dark_text_input_background">#3d3d3d</color>
 

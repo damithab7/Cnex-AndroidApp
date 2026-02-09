@@ -1,4 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
     <attr name="textColorCustom" format="reference"/>
+    <attr name="mainBgCustom" format="reference"/>
 </resources>

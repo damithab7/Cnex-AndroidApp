@@ -1,9 +1,7 @@
 package lk.damithab.cnex.adapter;
 
-import android.app.AppOpsManager;
 import android.content.Context;
 import android.net.Uri;
-import android.text.Layout;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
@@ -11,13 +9,11 @@ import android.widget.ImageView;
 import android.widget.TextView;
 
 import androidx.annotation.NonNull;
-import androidx.cardview.widget.CardView;
 import androidx.recyclerview.widget.RecyclerView;
 
 import java.util.List;
 
 import lk.damithab.cnex.R;
-import lk.damithab.cnex.activity.HomeActivity;
 import lk.damithab.cnex.dto.CategoryDTO;
 
 public class HomeCategoryAdapter extends RecyclerView.Adapter<HomeCategoryAdapter.ViewHolder> {

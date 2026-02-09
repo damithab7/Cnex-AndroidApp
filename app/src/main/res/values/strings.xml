@@ -13,8 +13,11 @@
     <string name="continue_btn_txt">Continue</string>
     <string name="sign_up_link_text">Don’t have an account ?</string>
     <string name="sign_up_link">Create one</string>
+    <string name="sign_in_back">Back to login</string>
     <string name="forgot_password_link_text">Forgot Password ?</string>
     <string name="forgot_password_link">Reset</string>
+    <string name="hello">Hello!</string>
+    <string name="sign_in_welcome">Welcome to Cnex</string>
 
     <!--    SignUpActivity Text-->
     <string name="sign_up_txt">Sign Up</string>

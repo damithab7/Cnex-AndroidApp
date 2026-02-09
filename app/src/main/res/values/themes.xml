@@ -16,10 +16,12 @@
         <item name="colorPrimarySurface">@color/light_main</item>
         <!-- Top tatus Bar-->
         <item name="android:windowLightStatusBar">true</item>
+        <item name="android:statusBarColor">@color/white</item>
         <!-- Background window color-->
         <item name="android:windowBackground">@color/white</item>
         <!-- EditText background color-->
         <item name="editTextBackground">@color/light_text_input_background</item>
         <item name="textColorCustom">@color/black</item>
+        <item name="mainBgCustom">@color/light_main_variant</item>
     </style>
 </resources>

@@ -16,11 +16,13 @@
         <item name="colorPrimarySurface">@color/dark_active</item>
         <!-- Top tatus Bar-->
         <item name="android:windowLightStatusBar">false</item>
+        <item name="android:statusBarColor">@color/dark_main</item>
         <!-- Background window color-->
         <item name="android:windowBackground">@color/dark_main</item>
         <!-- EditText background color-->
         <item name="editTextBackground">@color/dark_text_input_background</item>
         <item name="android:drawableLeft">@color/white</item>
         <item name="textColorCustom">@color/white</item>
+        <item name="mainBgCustom">@color/dark_main_variant</item>
     </style>
 </resources>

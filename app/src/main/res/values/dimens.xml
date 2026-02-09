@@ -39,7 +39,11 @@
 <!--    Width-->
     <dimen name="edit_text_icon_width">24dp</dimen>
     <dimen name="default_icon_width">28dp</dimen>
+    <dimen name="small_icon_width">20dp</dimen>
+    <dimen name="logo_width">180dp</dimen>
 <!--    Height-->
     <dimen name="edit_text_icon_height">24dp</dimen>
     <dimen name="default_icon_height">28dp</dimen>
+    <dimen name="small_icon_height">20dp</dimen>
+    <dimen name="logo_height">70dp</dimen>
 </resources>
