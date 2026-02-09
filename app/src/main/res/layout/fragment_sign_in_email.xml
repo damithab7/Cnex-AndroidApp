@@ -16,7 +16,7 @@
         android:fontFamily="@font/poppins"
         android:textSize="@dimen/edit_text_size"
         android:drawablePadding="@dimen/edit_text_icon_padding"
-        android:drawableLeft="@drawable/emailicon"
+        android:drawableStart="@drawable/emailicon"
         android:padding="@dimen/edit_text_padding"
         android:hint="@string/email_placeholder_hint"/>
 
@@ -43,10 +43,10 @@
             android:text="@string/sign_up_link_text" />
 
         <TextView
-            android:layout_marginLeft="2dp"
+            android:layout_marginStart="2dp"
             android:id="@+id/sign_up_link_view"
             android:textSize="@dimen/link_click_text_size"
-            android:layout_width="wrap_content"
+            android:layout_width="0dp"
             android:layout_height="wrap_content"
             android:layout_weight="1"
             android:textStyle="bold"
