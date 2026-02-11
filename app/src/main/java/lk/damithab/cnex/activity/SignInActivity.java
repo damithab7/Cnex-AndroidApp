@@ -47,16 +47,20 @@ public class SignInActivity extends AppCompatActivity {
     private static final String welcomeScreenShownPref = "welcomeScreenShown",
             PREFERENCE_NAME = "welcome_screen";
 
-
     @Override
     protected void onCreate(Bundle savedInstanceState) {
-
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_sign_in);
 
-        /// Load fragments by fragment transactions
-        loadFragments(new SignInEmailFragment(), false);
-
+        String accessToken = TokenManager.retrieveAccessToken(this);
+        if(accessToken != null && !accessToken.isEmpty()){
+            Intent intent = new Intent(SignInActivity.this, MainActivity.class);
+            startActivity(intent);
+            finish();
+        }else{
+            /// Load fragments by fragment transactions
+            loadFragments(new SignInEmailFragment(), false);
+        }
 
     }
 
@@ -74,7 +78,7 @@ public class SignInActivity extends AppCompatActivity {
                     TokenDTO tokenDTO = response.body();
                     if (tokenDTO != null) {
                         TokenManager.saveTokens(SignInActivity.this, tokenDTO);
-                        Intent intent = new Intent(SignInActivity.this, HomeActivity.class);
+                        Intent intent = new Intent(SignInActivity.this, MainActivity.class);
                         intent.addFlags(Intent.FLAG_ACTIVITY_NEW_TASK | Intent.FLAG_ACTIVITY_CLEAR_TASK);
                         intent.putExtra("userEmail", email);
                         startActivity(intent);

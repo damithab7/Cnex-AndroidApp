@@ -9,7 +9,7 @@ import retrofit2.converter.gson.GsonConverterFactory;
 
 public class RetrofitClient {
     private static Retrofit retrofit;
-    public static final String BASE_URL="http://10.0.2.2:8080/api/v1/"; ///emulators -> 10.0.2.2:8080
+    public static final String BASE_URL="http://10.77.241.155:8080/api/v1/"; ///emulators -> 10.0.2.2:8080
     /// physical device -> ipv4 address
 
     public static Retrofit getInstance(Context context){
@@ -19,6 +19,7 @@ public class RetrofitClient {
                     .build();
             retrofit = new Retrofit.Builder()
                     .baseUrl(BASE_URL)
+                    .client(client)
                     .addConverterFactory(GsonConverterFactory.create())
                     .build();
         }

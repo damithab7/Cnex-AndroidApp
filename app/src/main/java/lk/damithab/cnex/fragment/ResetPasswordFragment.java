@@ -12,10 +12,10 @@ import lk.damithab.cnex.R;
 
 /**
  * A simple {@link Fragment} subclass.
- * Use the {@link RestPasswordFragment#newInstance} factory method to
+ * Use the {@link ResetPasswordFragment#newInstance} factory method to
  * create an instance of this fragment.
  */
-public class RestPasswordFragment extends Fragment {
+public class ResetPasswordFragment extends Fragment {
 
     // TODO: Rename parameter arguments, choose names that match
     // the fragment initialization parameters, e.g. ARG_ITEM_NUMBER
@@ -26,7 +26,7 @@ public class RestPasswordFragment extends Fragment {
     private String mParam1;
     private String mParam2;
 
-    public RestPasswordFragment() {
+    public ResetPasswordFragment() {
         // Required empty public constructor
     }
 
@@ -39,8 +39,8 @@ public class RestPasswordFragment extends Fragment {
      * @return A new instance of fragment RestPasswordFragment.
      */
     // TODO: Rename and change types and number of parameters
-    public static RestPasswordFragment newInstance(String param1, String param2) {
-        RestPasswordFragment fragment = new RestPasswordFragment();
+    public static ResetPasswordFragment newInstance(String param1, String param2) {
+        ResetPasswordFragment fragment = new ResetPasswordFragment();
         Bundle args = new Bundle();
         args.putString(ARG_PARAM1, param1);
         args.putString(ARG_PARAM2, param2);
@@ -61,6 +61,6 @@ public class RestPasswordFragment extends Fragment {
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState) {
         // Inflate the layout for this fragment
-        return inflater.inflate(R.layout.fragment_rest_password, container, false);
+        return inflater.inflate(R.layout.fragment_reset_password, container, false);
     }
 }

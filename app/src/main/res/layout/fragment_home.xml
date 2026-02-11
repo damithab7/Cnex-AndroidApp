@@ -1,6 +1,4 @@
 <?xml version="1.0" encoding="utf-8"?>
-
-    <?xml version="1.0" encoding="utf-8"?>
     <androidx.core.widget.NestedScrollView xmlns:android="http://schemas.android.com/apk/res/android"
         xmlns:app="http://schemas.android.com/apk/res-auto"
         xmlns:tools="http://schemas.android.com/tools"
@@ -16,30 +14,22 @@
 
             <TextView
                 android:id="@+id/h_logo"
-                android:fontFamily="@font/poppins"
-                android:textSize="@dimen/logo_font_size"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
+                android:fontFamily="@font/poppins"
                 android:text="@string/logo_name"
-                app:layout_constraintEnd_toStartOf="@+id/imageView"
-                app:layout_constraintStart_toEndOf="@+id/imageView2"
+                android:textSize="@dimen/logo_font_size"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintTop_toTopOf="parent" />
 
             <ImageView
-                android:id="@+id/imageView"
+                android:id="@+id/homeNotificationBtn"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintTop_toTopOf="parent"
-                app:srcCompat="@drawable/wishlisticon" />
-
-            <ImageView
-                android:id="@+id/imageView2"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_toTopOf="parent"
-                app:srcCompat="@drawable/menuicon" />
+                app:srcCompat="@drawable/notificationicon" />
 
             <EditText
                 android:id="@+id/h_search_edittext"
@@ -74,18 +64,32 @@
                     android:layout_width="0dp"
                     android:layout_weight="1"
                     android:textStyle="bold"
-                    android:layout_height="wrap_content"
+                    android:includeFontPadding="false"
+                    android:gravity="center_vertical"
+                    android:layout_height="match_parent"
                     android:fontFamily="@font/poppins"
                     android:textSize="@dimen/sub_heading_size"
                     android:text="Categories" />
 
-                <TextView
+                <com.google.android.material.button.MaterialButton
+                    style="@style/Widget.Material3.Button.TextButton"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
+                    app:icon="@drawable/rightsmallarrow"
+                    app:iconGravity="textEnd"
+                    app:iconPadding="4dp"
                     android:fontFamily="@font/poppins"
-                    android:text="See All"
-                    android:textAlignment="textEnd"
-                    android:textSize="@dimen/sub_heading_size" />
+                    android:includeFontPadding="false"
+                    android:gravity="center_vertical"
+                    android:minWidth="0dp"
+                    android:minHeight="0dp"
+                    android:paddingVertical="0dp"
+                    android:paddingStart="5dp"
+                    android:paddingEnd="0dp"
+                    android:text="@string/see_all"
+                    android:textAllCaps="false"
+                    android:textSize="@dimen/sub_heading_size"
+                    android:textStyle="bold" />
             </LinearLayout>
 
             <androidx.recyclerview.widget.RecyclerView
@@ -111,21 +115,30 @@
                 app:layout_constraintTop_toBottomOf="@+id/home_categories_recycle">
 
                 <TextView
+                    android:includeFontPadding="false"
                     android:layout_width="0dp"
                     android:layout_height="match_parent"
                     android:layout_weight="1"
                     android:textStyle="bold"
                     android:fontFamily="@font/poppins"
                     android:gravity="center_vertical"
-                    android:text="New Arrivals"
+                    android:text="@string/new_arrivals"
                     android:textSize="@dimen/sub_heading_size" />
 
-                <ImageView
-                    android:id="@+id/newArrivalsHome"
+                <com.google.android.material.button.MaterialButton
+                    style="@style/Widget.Material3.Button.TextButton"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    app:srcCompat="@drawable/rightarrow" />
-
+                    android:minWidth="0dp"
+                    android:minHeight="0dp"
+                    android:paddingVertical="0dp"
+                    android:paddingStart="5dp"
+                    android:paddingEnd="0dp"
+                    android:id="@+id/newArrivalsHome"
+                    app:icon="@drawable/rightsmallarrow"
+                    app:iconGravity="textEnd"
+                    app:iconPadding="4dp"
+                    />
 
             </LinearLayout>
 

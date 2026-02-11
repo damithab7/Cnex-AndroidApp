@@ -12,6 +12,8 @@ import androidx.lifecycle.ViewModelProvider;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.view.animation.Animation;
+import android.view.animation.AnimationUtils;
 import android.widget.Button;
 import android.widget.EditText;
 
@@ -42,8 +44,13 @@ public class SignInPasswordFragment extends Fragment {
 
 
         continueToHome.setOnClickListener(v -> {
-            String password = passwordInput.getText().toString().trim();
-            validatePassword(password);
+            Animation anim = AnimationUtils.loadAnimation(getContext(), R.anim.button_click);
+            v.startAnimation(anim);
+            v.postDelayed(()->{
+                String password = passwordInput.getText().toString().trim();
+                validatePassword(password);
+            },100);
+
         });
 
     }

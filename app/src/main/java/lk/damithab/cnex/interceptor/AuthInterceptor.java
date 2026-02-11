@@ -43,7 +43,7 @@ public class AuthInterceptor implements Interceptor {
         /// attach request header ===> authorization
         String accessToken = TokenManager.retrieveAccessToken(context);
         Request request = originalRequest.newBuilder()
-                .header(AuthInterceptor.AUTHORIZATION, "Bearer" + accessToken)
+                .header(AuthInterceptor.AUTHORIZATION, "Bearer " + accessToken)
                 .build();
         Response response = chain.proceed(request);
         if(response.code()==AuthInterceptor.UNAUTHORIZED){
@@ -52,10 +52,10 @@ public class AuthInterceptor implements Interceptor {
                 synchronized (this){
                     String newAccess = fetchRefreshToken();
                     if(newAccess != null){
-                        Request newRequeset = originalRequest.newBuilder()
-                                .header(AuthInterceptor.AUTHORIZATION, "Bearer" + newAccess)
+                        Request newRequest = originalRequest.newBuilder()
+                                .header(AuthInterceptor.AUTHORIZATION, "Bearer " + newAccess)
                                 .build();
-                        return chain.proceed(newRequeset);
+                        return chain.proceed(newRequest);
                     }
                 }
         }

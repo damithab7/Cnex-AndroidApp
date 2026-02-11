@@ -14,35 +14,51 @@
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="@+id/sign_up_back_layout" />
+        app:layout_constraintTop_toTopOf="@+id/sign_up_back_btn" />
 
-    <LinearLayout
-        android:id="@+id/sign_up_back_layout"
+<!--    <LinearLayout-->
+<!--        android:id="@+id/sign_up_back_layout"-->
+<!--        android:layout_width="wrap_content"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        android:paddingTop="15dp"-->
+<!--        android:layout_marginHorizontal="@dimen/default_margin_horizontal"-->
+<!--        android:layout_marginBottom="@dimen/small_margin_bottom"-->
+<!--        android:orientation="horizontal"-->
+<!--        app:layout_constraintBottom_toTopOf="@+id/SignUpText"-->
+<!--        app:layout_constraintStart_toStartOf="parent">-->
+
+
+<!--        <ImageView-->
+<!--            android:layout_width="wrap_content"-->
+<!--            android:layout_height="wrap_content"-->
+<!--            app:srcCompat="@drawable/smallarrowleft" />-->
+
+<!--        <TextView-->
+<!--            android:layout_width="wrap_content"-->
+<!--            android:layout_height="wrap_content"-->
+<!--            android:layout_marginStart="2dp"-->
+<!--            android:fontFamily="@font/poppins"-->
+<!--            android:paddingLeft="@dimen/small_padding"-->
+<!--            android:text="@string/sign_in_back"-->
+<!--            android:textSize="@dimen/link_click_text_size"-->
+<!--            android:textStyle="bold" />-->
+<!--    </LinearLayout>-->
+
+    <com.google.android.material.button.MaterialButton
+        style="@style/Widget.MaterialComponents.Button.TextButton"
+        android:id="@+id/sign_up_back_btn"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:paddingTop="15dp"
+        android:textAllCaps="false"
+        android:text="@string/sign_in_back"
         android:layout_marginHorizontal="@dimen/default_margin_horizontal"
         android:layout_marginBottom="@dimen/small_margin_bottom"
-        android:orientation="horizontal"
+        android:fontFamily="@font/poppins"
+        android:padding="0dp"
+        android:textSize="@dimen/link_click_text_size"
+        app:icon="@drawable/smallarrowleft"
         app:layout_constraintBottom_toTopOf="@+id/SignUpText"
-        app:layout_constraintStart_toStartOf="parent">
-
-
-        <ImageView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            app:srcCompat="@drawable/smallarrowleft" />
-
-        <TextView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_marginStart="2dp"
-            android:fontFamily="@font/poppins"
-            android:paddingLeft="@dimen/small_padding"
-            android:text="@string/sign_in_back"
-            android:textSize="@dimen/link_click_text_size"
-            android:textStyle="bold" />
-    </LinearLayout>
+        app:layout_constraintStart_toStartOf="parent"/>
 
     <TextView
         android:id="@+id/SignUpText"

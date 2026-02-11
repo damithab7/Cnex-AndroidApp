@@ -10,7 +10,6 @@
         android:id="@+id/bottomBackgroundCard"
         android:layout_width="match_parent"
         android:layout_height="0dp"
-        android:layout_marginTop="15dp"
         android:background="@drawable/bg_login_card"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
@@ -62,7 +61,8 @@
 
         <TextView
             android:layout_width="match_parent"
-            android:layout_height="75dp"
+            android:layout_height="wrap_content"
+            android:includeFontPadding="false"
             android:fontFamily="@font/poppins"
             android:text="@string/hello"
             android:textSize="60sp"
@@ -72,6 +72,7 @@
             android:layout_width="match_parent"
             android:layout_height="0dp"
             android:layout_weight="1"
+            android:paddingBottom="10dp"
             android:fontFamily="@font/poppins"
             android:text="@string/sign_in_welcome"
             android:textSize="18sp"
