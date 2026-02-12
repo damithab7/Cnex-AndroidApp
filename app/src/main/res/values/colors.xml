@@ -8,22 +8,37 @@
     <color name="black">#FF000000</color>
     <color name="white">#FFFFFFFF</color>
     <!--    Light theme colors-->
-    <color name="light_main">#2C4251</color>    <!--    Charcol Blue-->
-    <color name="light_main_variant">#d3d6e2</color>    <!--    Charcol Blue-->
+    <color name="light_main">#4F518C</color>
+    <color name="light_main_variant">#F3F3F3</color>    <!--    Charcol Blue-->
     <color name="light_active">#9DD1F1</color> <!--baby blue-->
     <color name="non_active">#C8E0F4</color> <!-- pale sky-->
-    <color name="light_purple">#B7B5E4</color>
+    <color name="light_purple">#BBBDF6</color>
+    <color name="light_primary">#4F518C</color>
+    <color name="light_primary_variant">#32347C</color>
+    <color name="very_light_purple">#f9effc</color>
     <color name="light_text_input_background">#F4F4F4</color>
+
+    <color name="light_start_color">#FFFFFF</color>
+    <color name="light_middle_color">#F4F4F4</color>
+    <color name="light_last_color">#EFF1F2</color>
     <!--    Dark theme colors-->
     <color name="dark_main">#151515</color>    <!--    Onyx-->
     <color name="dark_main_variant">#020202</color>
     <color name="dark_main2">#041B15</color> <!--Evergreen-->
     <color name="dark_main3">#170312</color> <!-- coffeeBean-->
-    <color name="dark_active">#607ADB</color>
+    <color name="dark_primary">#785AF4</color>
+    <color name="dark_primary_variant">#B9AAF8</color>
     <color name="dark_icons">#F4F4F4</color>
     <color name="dark_text_input_background">#3d3d3d</color>
+    <color name="icon_bg_dark">#323232</color>
 
+    <color name="dark_first_color">#272433</color>
+    <color name="dark_middle_color">#161616</color>
+    <color name="dark_last_color">#1C1A27</color>
+    
     <color name="input_icon_color">#A19DA3</color>
     <color name="red">#f90419</color>
 
+    <color name="stroke_color">#EFEFEF</color>
+    <color name="stroke_color_dark">#363636</color>
 </resources>

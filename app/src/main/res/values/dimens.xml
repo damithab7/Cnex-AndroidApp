@@ -22,7 +22,7 @@
 <!--    Text Size-->
     <dimen name="edit_text_size">13sp</dimen>
     <dimen name="button_text_size">15sp</dimen>
-    <dimen name="link_click_text_size">12sp</dimen>
+    <dimen name="link_click_text_size">14sp</dimen>
     <dimen name="default_font_size">14sp</dimen>
     <dimen name="small_font_size">12sp</dimen>
     <dimen name="logo_font_size">20sp</dimen>

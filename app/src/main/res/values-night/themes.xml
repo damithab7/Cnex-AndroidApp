@@ -2,18 +2,18 @@
     <!-- Base application theme. -->
     <style name="AppTheme" parent="Theme.Material3.Dark.NoActionBar">
         <!-- Primary brand color. -->
-        <item name="colorPrimary">@color/dark_active</item>
-        <item name="colorPrimaryVariant">@color/dark_active</item>
+        <item name="colorPrimary">@color/dark_primary</item>
+        <item name="colorPrimaryVariant">@color/dark_primary_variant</item>
         <item name="colorOnPrimary">@color/white</item>
         <!-- Secondary brand color. -->
-        <item name="colorSecondary">@color/dark_main2</item>
+        <item name="colorSecondary">@color/white</item>
         <item name="colorSecondaryVariant">@color/teal_200</item>
         <item name="colorOnSecondary">@color/black</item>
         <!-- Customize your theme here. -->
         <!-- Dialog, Cards-->
         <item name="colorSurface">@color/dark_main</item>
         <item name="colorOnSurface">@color/white</item>
-        <item name="colorPrimarySurface">@color/dark_active</item>
+        <item name="colorPrimarySurface">@color/dark_primary</item>
         <!-- Top tatus Bar-->
         <item name="android:windowLightStatusBar">false</item>
         <item name="android:statusBarColor">@color/dark_main</item>
@@ -23,6 +23,20 @@
         <item name="editTextBackground">@color/dark_text_input_background</item>
         <item name="android:drawableLeft">@color/white</item>
         <item name="textColorCustom">@color/white</item>
-        <item name="mainBgCustom">@color/dark_main_variant</item>
+
+        <!--  Gradient Colors-->
+        <item name="gradientFirstColor">@color/dark_first_color</item>
+        <item name="gradientMiddleColor">@color/dark_middle_color</item>
+        <item name="gradientLastColor">@color/dark_last_color</item>
+
+        <item name="customBackgroundTheme">@color/dark_text_input_background</item>
+
+        <item name="navBgColor">?attr/colorSurface</item>
+        <item name="mainBgCustom">@color/icon_bg_dark</item>
+        <item name="customStrokeColor">@color/stroke_color_dark</item>
+    </style>
+
+    <style name="AppTheme.FullScreen" parent="AppTheme">
+        <item name="android:windowFullscreen">true</item>
     </style>
 </resources>

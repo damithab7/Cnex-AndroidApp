@@ -9,7 +9,9 @@
             android:id="@+id/main"
             android:layout_width="match_parent"
             android:layout_height="match_parent"
-            android:layout_margin="@dimen/layout_margin"
+            android:layout_marginTop="@dimen/margin_25"
+            android:layout_marginBottom="@dimen/layout_margin"
+            android:layout_marginHorizontal="@dimen/layout_margin"
             tools:context=".activity.HomeActivity">
 
             <TextView
@@ -19,17 +21,27 @@
                 android:fontFamily="@font/poppins"
                 android:text="@string/logo_name"
                 android:textSize="@dimen/logo_font_size"
+                android:textColor="?attr/textColorCustom"
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintTop_toTopOf="parent" />
 
-            <ImageView
+            <com.google.android.material.button.MaterialButton
+                style="@style/Widget.Material3.Button.TextButton"
                 android:id="@+id/homeNotificationBtn"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
+                android:minWidth="0dp"
+                android:minHeight="0dp"
+                android:paddingVertical="0dp"
+                app:cornerRadius="50dp"
+                android:paddingHorizontal="5dp"
+                app:icon="@drawable/notificationicon"
+                app:iconGravity="textEnd"
+                app:iconPadding="4dp"
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintTop_toTopOf="parent"
-                app:srcCompat="@drawable/notificationicon" />
+               />
 
             <EditText
                 android:id="@+id/h_search_edittext"
@@ -79,6 +91,8 @@
                     app:iconGravity="textEnd"
                     app:iconPadding="4dp"
                     android:fontFamily="@font/poppins"
+                    app:iconTint="?attr/textColorCustom"
+                    android:textColor="?attr/textColorCustom"
                     android:includeFontPadding="false"
                     android:gravity="center_vertical"
                     android:minWidth="0dp"
@@ -129,8 +143,12 @@
                     style="@style/Widget.Material3.Button.TextButton"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
+                    app:iconTint="?attr/textColorCustom"
+                    android:textColor="?attr/textColorCustom"
                     android:minWidth="0dp"
                     android:minHeight="0dp"
+                    android:text="@string/view_all"
+                    android:textStyle="bold"
                     android:paddingVertical="0dp"
                     android:paddingStart="5dp"
                     android:paddingEnd="0dp"
